@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Youssif Things</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #141414;
+      color: #fff;
+    }
+
+    /* Logo section */
+    .logo-section {
+      width: 100%;
+      background-color: #1f1f1f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .logo-section img {
+      max-width: 300px;
+      width: 80%;
+      height: auto;
+    }
+
+    header {
+      padding: 20px;
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+      background-color: #1f1f1f;
+    }
+
+    .episodes-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .episode {
+      width: 200px;
+      background-color: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+
+    .episode:hover {
+      transform: scale(1.05);
+    }
+
+    .episode video {
+      width: 100%;
+      border-bottom: 2px solid #444;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .episode-title {
+      padding: 10px;
+      text-align: center;
+      font-size: 1em;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    /* Scrollable row example */
+    .row {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+      padding: 10px 20px;
+    }
+
+    .row::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .row::-webkit-scrollbar-thumb {
+      background: #555;
+      border-radius: 4px;
+    }
+
+    .row::-webkit-scrollbar-track {
+      background: #222;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo Section -->
+  <div class="logo-section">
+    <img src="logo.png" alt="Youssif Things Logo">
+  </div>
+
+  <header>🎬 Youssif Things</header>
+
+  <div class="episodes-container">
+    <div class="episode">
+      <video controls>
+        <source src="videos/episode1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="episode-title">SPOILER 🔥</div>
+    </div>
+
+    <div class="episode">
+      <video controls>
+        <source src="videos/episode2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="episode-title">Episode 2</div>
+    </div>
+
+    <div class="episode">
+      <video controls>
+        <source src="videos/episode3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="episode-title">Episode 3</div>
+    </div>
+  </div>
+
+</body>
+</html>
